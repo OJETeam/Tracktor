@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracktor", "Tracktor\Tracktor.csproj", "{4EBB4119-6E0F-4C18-AA9B-9AEED30794E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A99CADF-D813-463F-AF5F-32924F9551A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A99CADF-D813-463F-AF5F-32924F9551A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A99CADF-D813-463F-AF5F-32924F9551A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A99CADF-D813-463F-AF5F-32924F9551A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EBB4119-6E0F-4C18-AA9B-9AEED30794E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EBB4119-6E0F-4C18-AA9B-9AEED30794E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EBB4119-6E0F-4C18-AA9B-9AEED30794E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EBB4119-6E0F-4C18-AA9B-9AEED30794E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B6DAD53-F6D6-4913-8BC5-CE903CB58182}
+	EndGlobalSection
+EndGlobal
