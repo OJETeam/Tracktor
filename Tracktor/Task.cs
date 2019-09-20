@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Tracktor
 {
-    public abstract class Task
+    public class Task
     {
         public string Id;
+        public TaskType Type;
+        public TaskPriority Priority;
+        public TaskStatus Status;
     }
 }
