@@ -1,4 +1,5 @@
 ﻿using System;
+using SpaceVIL;
 
 namespace Tracktor
 {
@@ -6,7 +7,9 @@ namespace Tracktor
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SpaceVIL.Common.CommonService.InitSpaceVILComponents();
+            MainWindow mw = new MainWindow();
+            mw.Show();
         }
     }
 }
