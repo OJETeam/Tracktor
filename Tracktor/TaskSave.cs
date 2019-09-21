@@ -4,16 +4,10 @@ using System.Text;
 
 namespace Tracktor
 {
-    public class TaskSave
+    public abstract class TaskSave
     {
-        public void SaveTask(Task task)
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract void SaveTask(Task task);
 
-        public Task LoadTask()
-        {
-            throw new System.NotImplementedException();
-        }
+        public abstract Task LoadTask();
     }
 }

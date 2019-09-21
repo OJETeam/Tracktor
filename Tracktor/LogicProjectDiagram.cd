@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Tracktor.Task">
-    <Position X="5.5" Y="2" Width="1.5" />
+    <Position X="5.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAEAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Task.cs</FileName>
@@ -13,42 +13,49 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Tracktor.Program" Collapsed="true">
-    <Position X="11.5" Y="2.25" Width="1.5" />
+    <Position X="11" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.TaskSave">
-    <Position X="7" Y="3.5" Width="1.5" />
+    <Position X="11" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>TaskSave.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.Settings">
-    <Position X="10" Y="4.25" Width="1.5" />
+    <Position X="12.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Settings.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Tracktor.XmlTaskSave">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XmlTaskSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="Tracktor.TaskType">
-    <Position X="2.25" Y="2" Width="1.5" />
+    <Position X="8.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAAAQAAAAgAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
       <FileName>TaskType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Tracktor.TaskPriority">
-    <Position X="2.25" Y="3.75" Width="1.5" />
+    <Position X="2.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAgAAAAACA=</HashCode>
       <FileName>TaskPriority.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="Tracktor.TaskStatus">
-    <Position X="2.25" Y="0.75" Width="1.5" />
+    <Position X="5.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TaskStatus.cs</FileName>
