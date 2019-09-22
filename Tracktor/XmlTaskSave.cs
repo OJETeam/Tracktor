@@ -9,7 +9,7 @@ namespace Tracktor
     {
         public XmlTaskSave(XmlReader reader)
         {
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public override void SaveTask(Task task)

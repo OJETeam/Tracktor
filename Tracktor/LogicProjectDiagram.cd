@@ -12,11 +12,11 @@
       <Field Name="Status" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Tracktor.Program" Collapsed="true">
+  <Class Name="Tracktor.TestLogic" Collapsed="true">
     <Position X="11" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>TestLogic.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.TaskSave">
@@ -36,8 +36,22 @@
   <Class Name="Tracktor.XmlTaskSave">
     <Position X="11" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>XmlTaskSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tracktor.TaskListSave">
+    <Position X="13.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>TaskListSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tracktor.XmlTaskListSave">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>XmlTaskListSave.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="Tracktor.TaskType">
