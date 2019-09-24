@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tracktor
+﻿namespace Tracktor
 {
     public enum TaskType
     {
-        Bug,
-        Feature,
-        Improvement,
-        Refactor
+        Bug = 1,
+        Feature = 2,
+        Improvement = 3,
+        Refactor = 4
     }
 }

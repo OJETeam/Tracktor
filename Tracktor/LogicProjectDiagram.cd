@@ -20,37 +20,37 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.TaskSave">
-    <Position X="11" Y="5.75" Width="1.5" />
+    <Position X="11" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>TaskSave.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.Settings">
     <Position X="12.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIACAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Settings.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.XmlTaskSave">
     <Position X="11" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAgACAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>XmlTaskSave.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.TaskListSave">
-    <Position X="13.25" Y="6" Width="1.5" />
+    <Position X="13.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>TaskListSave.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.XmlTaskListSave">
-    <Position X="13.25" Y="3.5" Width="1.5" />
+    <Position X="13.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAQAAAAAAACAAAAACAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>XmlTaskListSave.cs</FileName>
     </TypeIdentifier>
   </Class>

@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tracktor
+﻿namespace Tracktor
 {
     public enum TaskPriority
     {
-        Trivial,
-        Minor,
-        Major,
-        Critical,
-        Blocker
+        Trivial = 1,
+        Minor = 2,
+        Major = 3,
+        Critical = 4,
+        Blocker = 5
     }
 }

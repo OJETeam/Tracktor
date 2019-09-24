@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Tracktor
+﻿namespace Tracktor
 {
     public enum TaskStatus
     {
-        Done,
-
+        NotViewed = 1,
+        InProgress = 2,
+        Done = 3
     }
 }
