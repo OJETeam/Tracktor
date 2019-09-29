@@ -1,7 +1,4 @@
-﻿using System;
-using SpaceVIL;
-
-namespace Tracktor
+﻿namespace Tracktor
 {
     class Program
     {
