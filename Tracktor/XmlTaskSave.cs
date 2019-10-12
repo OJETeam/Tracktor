@@ -30,7 +30,7 @@ namespace Tracktor
             XElement statusElement = RootElement.Element(XmlElementNames.TaskStatus);
 
             string name = nameElement.Value;
-            TaskType type = Enum.Parse<TaskType>(typeElement.Value);
+            TaskType type = Enum.Parse<TaskType>(typeElement.Value); //TODO remove enum parsing
             TaskPriority priority = Enum.Parse<TaskPriority>(priorityElement.Value);
             TaskStatus status = Enum.Parse<TaskStatus>(statusElement.Value);
 

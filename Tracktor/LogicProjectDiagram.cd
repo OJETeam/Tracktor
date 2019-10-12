@@ -3,7 +3,7 @@
   <Class Name="Tracktor.Task">
     <Position X="5.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAEAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAAAAAEAAAAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Task.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -15,7 +15,7 @@
   <Class Name="Tracktor.TestLogic" Collapsed="true">
     <Position X="11" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAEAEAAAAAAAAAAgAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>TestLogic.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -36,7 +36,7 @@
   <Class Name="Tracktor.XmlTaskSave">
     <Position X="11" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAgACAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAABAAAgAAAAAAAAAA=</HashCode>
       <FileName>XmlTaskSave.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -50,7 +50,7 @@
   <Class Name="Tracktor.XmlTaskListSave">
     <Position X="13.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAACAAAAACAAAAAgAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAQAIAAAAACAAAAACAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>XmlTaskListSave.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -71,7 +71,7 @@
   <Enum Name="Tracktor.TaskStatus">
     <Position X="5.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAA=</HashCode>
       <FileName>TaskStatus.cs</FileName>
     </TypeIdentifier>
   </Enum>
