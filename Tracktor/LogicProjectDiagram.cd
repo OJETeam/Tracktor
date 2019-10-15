@@ -41,7 +41,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.TaskListSave">
-    <Position X="13.25" Y="6.25" Width="1.5" />
+    <Position X="13.25" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>TaskListSave.cs</FileName>
