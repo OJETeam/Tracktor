@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace Tracktor
+namespace Tracktor.Logic
 {
     public class Settings
     {

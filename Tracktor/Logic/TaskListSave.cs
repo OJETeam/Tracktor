@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Tracktor
+namespace Tracktor.Logic
 {
     public abstract class TaskListSave
     {

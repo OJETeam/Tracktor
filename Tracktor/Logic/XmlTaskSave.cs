@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Xml.Linq;
 
-namespace Tracktor
+namespace Tracktor.Logic
 {
     public class XmlTaskSave : TaskSave
     {

@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Tracktor.Logic;
 
 namespace Tracktor
 {
-    public class TestLogic
+    public static class TestLogic
     {
         public static List<Task> TestTasks;
 

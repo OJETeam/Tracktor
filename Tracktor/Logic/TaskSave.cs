@@ -1,4 +1,4 @@
-﻿namespace Tracktor
+﻿namespace Tracktor.Logic
 {
     public abstract class TaskSave
     {

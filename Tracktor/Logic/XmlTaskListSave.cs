@@ -3,7 +3,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Tracktor
+namespace Tracktor.Logic
 {
     public class XmlTaskListSave : TaskListSave
     {
