@@ -26,7 +26,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Tracktor.Logic.Settings">
-    <Position X="12.75" Y="1.75" Width="1.5" />
+    <Position X="15.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAIACAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
       <FileName>Logic\Settings.cs</FileName>
@@ -51,6 +51,20 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Logic\TaskListSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tracktor.Logic.SettingsSave">
+    <Position X="15.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SettingsSave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tracktor.Logic.XmlSettingsSave">
+    <Position X="15.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>XmlSettingsSave.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="Tracktor.Logic.TaskPriority">

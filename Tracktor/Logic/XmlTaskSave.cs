@@ -7,19 +7,14 @@ namespace Tracktor.Logic
     {
         public XElement RootElement;
 
-        public override void SaveTask(Task task)
+        public XmlTaskSave(XElement rootElement)
+        {
+            RootElement = rootElement;
+        }
+
+        public XmlTaskSave()
         {
             RootElement = new XElement(XmlElementNames.TaskElementName);
-
-            XElement name = new XElement(XmlElementNames.TaskName) { Value = task.Name };
-            XElement type = new XElement(XmlElementNames.TaskType) { Value = task.Type.ToString() };
-            XElement priority = new XElement(XmlElementNames.TaskPriority) { Value = task.Priority.ToString() };
-            XElement status = new XElement(XmlElementNames.TaskStatus) { Value = task.Status.ToString() };
-
-            RootElement.Add(name);
-            RootElement.Add(type);
-            RootElement.Add(priority);
-            RootElement.Add(status);
         }
 
         public override Task ReadTask()
@@ -36,6 +31,21 @@ namespace Tracktor.Logic
 
             Task task = new Task(name, type, priority, status);
             return task;
+        }
+
+        public override void SaveTask(Task task)
+        {
+            RootElement = new XElement(XmlElementNames.TaskElementName);
+
+            XElement name = new XElement(XmlElementNames.TaskName) { Value = task.Name };
+            XElement type = new XElement(XmlElementNames.TaskType) { Value = task.Type.ToString() };
+            XElement priority = new XElement(XmlElementNames.TaskPriority) { Value = task.Priority.ToString() };
+            XElement status = new XElement(XmlElementNames.TaskStatus) { Value = task.Status.ToString() };
+
+            RootElement.Add(name);
+            RootElement.Add(type);
+            RootElement.Add(priority);
+            RootElement.Add(status);
         }
     }
 }
