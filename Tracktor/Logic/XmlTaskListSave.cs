@@ -7,19 +7,19 @@ namespace Tracktor.Logic
 {
     public class XmlTaskListSave : TaskListSave
     {
-        public readonly string Filename;
+        public readonly string Path;
 
-        public XmlTaskListSave(string xmlDocumentFilename)
+        public XmlTaskListSave(string xmlDocumentPath)
         {
-            Filename = xmlDocumentFilename;
+            Path = xmlDocumentPath;
         }
 
         public override IEnumerable<Task> LoadTasks()
         {
-            if (!File.Exists(Filename))
+            if (!File.Exists(Path))
                 yield break;
 
-            using FileStream fileStream = new FileStream(Filename, FileMode.Open, FileAccess.Read);
+            using FileStream fileStream = new FileStream(Path, FileMode.Open, FileAccess.Read);
             XDocument doc = XDocument.Load(fileStream);
             XElement rootElement = doc.Root;
 
@@ -37,7 +37,7 @@ namespace Tracktor.Logic
 
             foreach (XElement element in rootElement.Elements(XmlElementNames.TaskElementName))
             {
-                XmlTaskSave loader = new XmlTaskSave { RootElement = element };
+                XmlTaskSave loader = new XmlTaskSave(element);
 
                 Task task = loader.ReadTask();
                 yield return task;
@@ -46,7 +46,7 @@ namespace Tracktor.Logic
 
         public override void SaveTasks(IEnumerable<Task> tasks) //TODO move header saving/restoring to separate class or function
         {
-            using FileStream fileStream = new FileStream(Filename, FileMode.Create, FileAccess.Write);
+            using FileStream fileStream = new FileStream(Path, FileMode.Create, FileAccess.Write);
             XDocument doc = new XDocument();
             XElement rootElement = new XElement(XmlElementNames.RootElementName);
             doc.Add(rootElement);

@@ -17,9 +17,15 @@ namespace Tracktor
                 new Task("OJ is fat AF", TaskType.Bug, TaskPriority.Blocker, TaskStatus.Done)
             };
 
+            XmlSettingsSave settingsLoad = new XmlSettingsSave("TEST_SETTINGS.xml");
+            Settings testLoadSettings = settingsLoad.ReadSettings();
+
             Settings currentSettings = new Settings(); //TODO move somewhere
             currentSettings.SaveFolder = "";
             currentSettings.SaveFilename = "MainTasks.task";
+
+            XmlSettingsSave settingsSave = new XmlSettingsSave("TEST_SETTINGS.xml");
+            settingsSave.SaveSettings(currentSettings);
 
             //SaveTest(currentSettings.GetSaveFilePath());
             LoadTest(currentSettings.GetSaveFilePath());
