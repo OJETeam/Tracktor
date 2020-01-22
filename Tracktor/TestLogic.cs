@@ -10,6 +10,8 @@ namespace Tracktor
 
         static void Main(string[] args)
         {
+            InitGUI();
+
             TestTasks = new List<Task>
             {
                 new Task("OJ is pidor", TaskType.Bug, TaskPriority.Blocker, TaskStatus.InProgress),
@@ -29,6 +31,14 @@ namespace Tracktor
 
             //SaveTest(currentSettings.GetSaveFilePath());
             LoadTest(currentSettings.GetSaveFilePath());
+        }
+
+        private static void InitGUI()
+        {
+            SpaceVIL.Common.CommonService.InitSpaceVILComponents();
+
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
         }
 
         private static void LoadTest(string filename)

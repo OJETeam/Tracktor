@@ -29,7 +29,7 @@ namespace Tracktor
             SetHeightPolicy(SizePolicy.Fixed);
             SetHeight(50);
             SetSpacing(new Spacing(0));
-           
+
             _statusImage = new ImageItem(Resources.Test);
             _statusImage.SetSizePolicy(SizePolicy.Fixed, SizePolicy.Fixed);
             _statusImage.SetSize(20, 20);//20 pixels 
@@ -38,18 +38,18 @@ namespace Tracktor
             _statusLabel = new Label("Test");
             _statusLabel.SetWidthPolicy(SizePolicy.Fixed);
             _statusLabel.SetWidth(93);
-            _statusLabel.SetFontSize(25);            
+            _statusLabel.SetFontSize(25);
 
             _nameLabel = new Label("Test feature or something");
             _nameLabel.SetToolTip(_nameLabel.GetText());
             _nameLabel.SetWidthPolicy(SizePolicy.Expand);
             _nameLabel.SetFontSize(25);
-            
-            _typeImage = new ImageItem(Resources.Test);            
-            _typeImage.SetSizePolicy(SizePolicy.Fixed, SizePolicy.Fixed);            
-            _typeImage.SetSize(20, 20);            
+
+            _typeImage = new ImageItem(Resources.Test);
+            _typeImage.SetSizePolicy(SizePolicy.Fixed, SizePolicy.Fixed);
+            _typeImage.SetSize(20, 20);
             _typeImage.SetAlignment(ItemAlignment.Left, ItemAlignment.VCenter);
-            _typeImage.KeepAspectRatio(true);            
+            _typeImage.KeepAspectRatio(true);
 
             _typeLabel = new Label("Test");
             _typeLabel.SetWidthPolicy(SizePolicy.Fixed);
@@ -73,8 +73,8 @@ namespace Tracktor
         {
             AddItems(new VerticalSpacer(), _statusImage, new VerticalSpacer(), _statusLabel, new VerticalSpacer(),
                 _nameLabel, new VerticalSpacer(), _typeImage, new VerticalSpacer(), _typeLabel,
-                new VerticalSpacer(), _priorityImage, new VerticalSpacer(), _priorityLabel);  
-            foreach(Prototype item in GetItems())
+                new VerticalSpacer(), _priorityImage, new VerticalSpacer(), _priorityLabel);
+            foreach (Prototype item in GetItems())
                 item.EventMouseClick += Click;
         }
 
@@ -83,13 +83,13 @@ namespace Tracktor
             Console.WriteLine("Im one of TaskWidget");
         }
 
-        public void SetStaus(bool status) // TODO : Change to enum
+        public void SetStatus(bool status) // TODO : Change to enum
         {
             if (status)
             {
                 _statusImage.SetImage(Resources.Done);
                 _statusLabel.SetText("Done");
-            }               
+            }
             else
             {
                 _statusImage.SetImage(Resources.WIP);
