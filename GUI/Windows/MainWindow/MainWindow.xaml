@@ -1,0 +1,28 @@
+﻿<Window
+    x:Class="GUI.Windows.MainWindow.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:GUI.Windows.MainWindow.Elements"
+    Title="GUI"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <DockPanel>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <views:TaskList />
+            <Grid Grid.Row="1">
+                <Button
+                    Command="{Binding Add}"
+                    Content="Add"
+                    DockPanel.Dock="Bottom" />
+            </Grid>
+        </Grid>
+    </DockPanel>
+</Window>

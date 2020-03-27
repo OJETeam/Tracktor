@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29230.47
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tracktor", "Tracktor\Tracktor.csproj", "{4EBB4119-6E0F-4C18-AA9B-9AEED30794E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{EB3FC0B0-26C1-47C6-B06D-790C48B703CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GUI", "GUI\GUI.csproj", "{EB3FC0B0-26C1-47C6-B06D-790C48B703CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Launcher", "Launcher\Launcher.csproj", "{C9CAF621-AF86-425C-9671-037DD6BB7A85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EB3FC0B0-26C1-47C6-B06D-790C48B703CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3FC0B0-26C1-47C6-B06D-790C48B703CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB3FC0B0-26C1-47C6-B06D-790C48B703CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9CAF621-AF86-425C-9671-037DD6BB7A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9CAF621-AF86-425C-9671-037DD6BB7A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9CAF621-AF86-425C-9671-037DD6BB7A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9CAF621-AF86-425C-9671-037DD6BB7A85}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
