@@ -10,7 +10,7 @@ namespace GUI
 			BuildAvaloniaApp().StartWithClassicDesktopLifetime(args);
 		}
 
-		private static AppBuilder BuildAvaloniaApp()
+		public static AppBuilder BuildAvaloniaApp()
 		{
 			return AppBuilder.Configure<App>().UsePlatformDetect().LogToDebug();
 		}

@@ -7,45 +7,38 @@
     d:DesignHeight="450"
     d:DesignWidth="800"
     mc:Ignorable="d">
-    <Grid Grid.Row="0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="1" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="1" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <TextBlock
-            Grid.Column="0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            FontSize="55"
-            TextWrapping="Wrap">
-            Left sivde
-        </TextBlock>
-        <GridSplitter
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="1" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+
+    <ItemsControl Grid.Column="0" Items="{Binding Tasks}">
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <Border
+      BorderBrush="Black"
+      BorderThickness="2"
+      CornerRadius="3"
+      Margin="-1">
+            <TextBlock
+                      Text="w"/>
+          </Border>
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+    <GridSplitter
             Grid.Column="1"
             Width="1"
             HorizontalAlignment="Stretch" />
-        <TextBlock
-            Grid.Column="2"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            FontSize="55"
-            TextWrapping="Wrap">
-            Right side
-        </TextBlock>
-        <GridSplitter
-            Grid.Column="3"
-            Width="1"
-            HorizontalAlignment="Stretch" />
-        <TextBlock
-            Grid.Column="4"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            FontSize="55"
-            TextWrapping="Wrap">
-            Beyond side
-        </TextBlock>
-    </Grid>
+    <ItemsControl Grid.Column="2" Items="{Binding Tasks}">
+      <ItemsControl.ItemTemplate>
+        <DataTemplate>
+          <TextBlock
+                    Text="g11111111"/>
+        </DataTemplate>
+      </ItemsControl.ItemTemplate>
+    </ItemsControl>
+  </Grid>
 </UserControl>

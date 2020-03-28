@@ -19,7 +19,6 @@
             <views:TaskList />
             <Grid Grid.Row="1">
                 <Button
-                    Command="{Binding Add}"
                     Content="Add"
                     DockPanel.Dock="Bottom" />
             </Grid>
