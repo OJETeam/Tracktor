@@ -25,48 +25,83 @@
 			<Setter Property="Background" Value="#f0f0f0" />
 		</Style>
 		<Style Selector="Button.element">
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Background" Value="Transparent" />
+			<Setter Property="BorderThickness" Value="0" />
+		</Style>
+		<Style Selector="TextBlock.element">
 			<Setter Property="FontSize" Value="25" />
 		</Style>
 	</UserControl.Styles>
 
-	<ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Visible">
-		<Grid>
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="1" />
-				<ColumnDefinition Width="*" />
-			</Grid.ColumnDefinitions>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="1" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
 
-			<StackPanel Grid.Column="0">
-				<Button Classes="title">Name</Button>
-				<ItemsControl Items="{Binding Tasks}">
-					<ItemsControl.ItemTemplate>
-						<DataTemplate>
-							<Border Classes="element">
-								<Button Classes="element" Content="{Binding Name}" />
-							</Border>
-						</DataTemplate>
-					</ItemsControl.ItemTemplate>
-				</ItemsControl>
-			</StackPanel>
+		<Button
+			Grid.Row="0"
+			Grid.Column="0"
+			Classes="title">
+			Name
+		</Button>
 
-			<GridSplitter
-				Grid.Column="1"
-				Width="1"
-				HorizontalAlignment="Stretch" />
+		<Button
+			Grid.Row="0"
+			Grid.Column="2"
+			Classes="title">
+			Description
+		</Button>
 
-			<StackPanel Grid.Column="2">
-				<Button Classes="title">Description</Button>
-				<ItemsControl Items="{Binding Tasks}">
-					<ItemsControl.ItemTemplate>
-						<DataTemplate>
-							<Border Classes="element">
-								<Button Classes="element" Content="{Binding Description}" />
-							</Border>
-						</DataTemplate>
-					</ItemsControl.ItemTemplate>
-				</ItemsControl>
-			</StackPanel>
-		</Grid>
-	</ScrollViewer>
+		<GridSplitter
+			Grid.Row="0"
+			Grid.RowSpan="2"
+			Grid.Column="1"
+			Width="10"
+			VerticalAlignment="Stretch"
+			ZIndex="2" />
+
+		<StackPanel
+			Grid.Row="1"
+			Grid.ColumnSpan="3"
+			ZIndex="1">
+			<ItemsControl Items="{Binding Tasks}">
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Button Classes="element" />
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+
+		<StackPanel Grid.Row="1" Grid.Column="0">
+			<ItemsControl Items="{Binding Tasks}">
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Border Classes="element">
+							<TextBlock Classes="element" Text="{Binding Name}" />
+						</Border>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+
+		<StackPanel Grid.Row="1" Grid.Column="2">
+			<ItemsControl Items="{Binding Tasks}">
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<Border Classes="element">
+							<TextBlock Classes="element" Text="{Binding Description}" />
+						</Border>
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</StackPanel>
+	</Grid>
 </UserControl>

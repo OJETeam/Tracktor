@@ -19,7 +19,7 @@ namespace GUI
 			{
 				desktop.MainWindow = new MainWindow
 				{
-					DataContext = new MainWindowViewModel(Test.GetTestTasks(50))
+					DataContext = new MainWindowViewModel(Test.GetTestTasks(30))
 				};
 			}
 
