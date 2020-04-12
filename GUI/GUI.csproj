@@ -12,9 +12,11 @@
     </AvaloniaResource>
   </ItemGroup>
   <ItemGroup>
+    <AvaloniaResource Remove="Windows\MainWindow\Elements\SplitScrollViewer.xaml" />
     <AvaloniaResource Remove="Windows\MainWindow\Elements\TaskList.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Windows\MainWindow\Elements\SplitScrollViewer.xaml" />
     <None Remove="Windows\MainWindow\Elements\TaskList.xaml" />
   </ItemGroup>
   <ItemGroup>
