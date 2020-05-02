@@ -44,7 +44,7 @@ namespace Tracktor
             SetParameters("Tracktor", "Tracktor", 720, 800);
             SetMinSize(650, 300);
             SetBackground(32, 32, 32);
-            SetIcon(Resources.Dozer, Resources.Dozer);            
+            //SetIcon(Resources.Dozer, Resources.Dozer);            
 
             _mainStack = new VerticalStack();
             _mainStack.SetAlignment(ItemAlignment.Top);
@@ -69,7 +69,7 @@ namespace Tracktor
             _addButton.SetBackground(32, 32, 32);
             _addButton.EventMouseClick += _addButtonClick;
             _topBar.AddItem(_addButton);
-            _addButton.AddItem(new ImageItem(Resources.Add));
+            //_addButton.AddItem(new ImageItem(Resources.Add));
             _topBar.AddItem(new VerticalSpacer());
 
             _settingsButton = new ButtonCore();            
@@ -78,7 +78,7 @@ namespace Tracktor
             _settingsButton.SetBackground(32, 32, 32);
             _settingsButton.EventMouseClick += _settingsButtonClick;
             _topBar.AddItem(_settingsButton);
-            _settingsButton.AddItem(new ImageItem(Resources.Settings));
+            //_settingsButton.AddItem(new ImageItem(Resources.Settings));
             _topBar.AddItem(new VerticalSpacer());
 
             _search = new TextEdit();
@@ -96,7 +96,7 @@ namespace Tracktor
             _filter.SetHeight(50);
             _mainStack.AddItem(_filter);
 
-            _statusAll = new CustomMenuItem("All", Resources.All);
+            //_statusAll = new CustomMenuItem("All", Resources.All);
             _statusAll.EventMouseClick += _statusAllClick;
             _statusDone = new CustomMenuItem("Done", Resources.Done);
             _statusDone.EventMouseClick += _statusDoneClick;
