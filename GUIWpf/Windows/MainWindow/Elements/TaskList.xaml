@@ -1,0 +1,127 @@
+﻿<av:UserControl
+	x:Class="GUI.Windows.MainWindow.Elements.TaskList"
+	xmlns="https://github.com/avaloniaui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	d:DesignHeight="450"
+	d:DesignWidth="800"
+	mc:Ignorable="d">
+	<av:UserControl.Styles>
+		<av:Style Selector="Button.title">
+			<av:Setter Property="Margin" Value="-1" />
+			<av:Setter Property="BorderBrush" Value="Gray" />
+			<av:Setter Property="BorderThickness" Value="2" />
+			<av:Setter Property="Height" Value="40" />
+			<av:Setter Property="FontSize" Value="15" />
+			<Setter Property="Background" Value="LightCyan" />
+		</av:Style>
+		<Style Selector="Border.element">
+			<Setter Property="Margin" Value="-1" />
+			<Setter Property="BorderBrush" Value="LightGray" />
+			<Setter Property="BorderThickness" Value="2" />
+			<Setter Property="CornerRadius" Value="3" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Background" Value="#f0f0f0" />
+		</Style>
+		<Style Selector="Button:pressed">
+			<Setter Property="Background" Value="Green" />
+		</Style>
+		<Style Selector="Button.element">
+			<Setter Property="Margin" Value="-1" />
+			<Setter Property="Height" Value="50" />
+			<Setter Property="Background" Value="Transparent" />
+			<Setter Property="BorderThickness" Value="10" />
+		</Style>
+		<Style Selector="TextBlock.element">
+			<Setter Property="FontSize" Value="25" />
+		</Style>
+		<Style Selector="GridSplitter">
+			<Setter Property="Width" Value="3" />
+			<Setter Property="Grid.RowSpan" Value="2" />
+			<Setter Property="VerticalAlignment" Value="Stretch" />
+			<Setter Property="ZIndex" Value="2" />
+		</Style>
+	</av:UserControl.Styles>
+
+	<Grid Grid.IsSharedSizeScope="True">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="40" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<Grid Grid.Row="0" ShowGridLines="True">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" SharedSizeGroup="NameColumn" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" SharedSizeGroup="DescriptionColumn" />
+			</Grid.ColumnDefinitions>
+
+			<GridSplitter Grid.Row="0" Grid.Column="1" />
+
+			<Button
+				Grid.Row="0"
+				Grid.Column="0"
+				Classes="title">
+				Name
+			</Button>
+
+			<Button
+				Grid.Row="0"
+				Grid.Column="2"
+				Classes="title">
+				Description
+			</Button>
+		</Grid>
+
+		<ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Hidden">
+			<Grid ShowGridLines="True">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto" SharedSizeGroup="NameColumn" />
+					<ColumnDefinition Width="Auto" />
+					<ColumnDefinition Width="Auto" SharedSizeGroup="DescriptionColumn" />
+				</Grid.ColumnDefinitions>
+
+				<GridSplitter Grid.Row="0" Grid.Column="1" />
+
+				<StackPanel
+					Grid.Row="1"
+					Grid.ColumnSpan="3"
+					ZIndex="1">
+					<ItemsControl Items="{Binding Tasks}">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<Button Classes="element" />
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</StackPanel>
+
+				<StackPanel Grid.Row="1" Grid.Column="0">
+					<ItemsControl Items="{Binding Tasks}">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<Border Classes="element">
+									<TextBlock Classes="element" Text="{Binding Name}" />
+								</Border>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</StackPanel>
+
+				<StackPanel Grid.Row="1" Grid.Column="2">
+					<ItemsControl Items="{Binding Tasks}">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<Border Classes="element">
+									<TextBlock Classes="element" Text="{Binding Description}" />
+								</Border>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</StackPanel>
+			</Grid>
+		</ScrollViewer>
+	</Grid>
+</av:UserControl>
